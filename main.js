@@ -1,4 +1,4 @@
-var fname='lecture_actions_test.csv';
+var fname='https://gitcdn.xyz/repo/yyben/CoUserTracking/master/lecture_actions_test.csv';
 
 // var finished = function(error, results) {
 //   console.log(results);
@@ -21,21 +21,20 @@ var fname='lecture_actions_test.csv';
 //   callback(null, i);  // first argument is error reason, second is result
 // }
 
-// console.log(fnames)
+ console.log(fname)
 // queue(2) //load multiple files
 //   .defer(d3.csv, fnames[0])
 //   .defer(d3.csv, fnames[1])
 //   .defer(d3.csv, fnames[2])
 //   .defer(d3.csv, fnames[3])
 //   .await(parseData);
-parseData();
+
 
 function parseData(fname){
  	d3.csv(fname,function(d){
- 		console.log(d)
-
+ 		//console.log(d)
 
  	});
 
-
  }
+ parseData();
